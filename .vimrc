@@ -193,8 +193,6 @@ inoremap ]     ]<Esc>
 "inoremap {      {}<Left>
 "inoremap {<CR>  {<CR>}<Esc>O
 
-autocmd BufNewFile,BufRead svk-commit*.tmp setf svk
-
 "set t_AB=[48;5;%dm
 "set t_AF=[38;5;%dm
 
