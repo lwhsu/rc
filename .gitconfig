@@ -1,0 +1,15 @@
+[alias]
+	ci = commit
+	co = checkout
+	di = diff
+	gl = log --graph --pretty=oneline
+	glog = log --graph
+	st = status --short
+	up = pull
+[user]
+	name = Li-Wen Hsu
+	email = lwhsu@lwhsu.org
+[diff]
+	color = auto
+[color]
+	ui = auto
