@@ -211,3 +211,24 @@ autocmd BufRead,BufNewFile *.ml map <F5> :% w !ocaml<CR>
 
 " JavaScript related
 autocmd BufRead,BufNewFile *.js map <F5> :% w !node<CR>
+
+" Tabs
+nmap <C-T>c :tabnew<CR>
+nmap <C-T>k :tabclose<CR>
+nmap <C-T>o :tabnew
+nmap <C-H> :tabprev<CR>
+nmap <C-L> :tabnext<CR>
+nmap <C-left> :tabprev<CR>
+nmap <C-right> :tabnext<CR>
+imap <ESC><C-Left> :tabprev<CR>
+imap <ESC><C-Right> :tabnext<CR>
+nmap [D :tabprev<CR>
+nmap [C :tabnext<CR>
+imap [D <ESC>:tabprev<CR>
+imap [C <ESC>:tabnext<CR>
+
+" Tab
+set listchars=tab:>-
+"noremap ,st :list listchars=tab:>-<CR>
+"noremap ,ct :set nolist<CR>
+map <F7> :set list!<CR><Bar>:echo "Unprintable characters display: " . strpart("OffOn", 3 * &list, 3)<CR>
