@@ -201,5 +201,13 @@ inoremap ]     ]<Esc>
 "map <Space>   :call SmoothPageScrollDown()<CR>
 "map <S-Space> :call SmoothPageScrollUp()<CR>
 
+" Python related
+au BufRead,BufNewFile *.py set ai et nu sw=4 ts=4 tw=79 expandtab
 autocmd BufRead,BufNewFile *.py map <F5> :% w !python<CR>
 autocmd BufRead,BufNewFile *.py vmap <F5> :w !python<CR>
+
+" OCaml related
+autocmd BufRead,BufNewFile *.ml map <F5> :% w !ocaml<CR>
+
+" JavaScript related
+autocmd BufRead,BufNewFile *.js map <F5> :% w !node<CR>
