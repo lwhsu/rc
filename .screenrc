@@ -1,0 +1,153 @@
+#
+# lwhsu's .screenrc
+#
+
+# This is how one can set a reattach password:
+#password ODSJQf.4IJN7E    # "1234"
+
+caption always "%{dK}%{+b K}> %{W}%n %t %{K}<%{W}%= %{dk}%{w} load: %l %{dw}%{b}  $USER@%H  %{dB}%{w} %Y %M. %d %D. %{g} %0c  "
+#idle 180 lockscreen
+
+vbell off 
+
+# detach on hangup
+autodetach on
+
+# don't display the copyright page
+startup_message off
+
+# emulate .logout message
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+# advertise hardstatus support to $TERMCAP
+# termcapinfo  * '' 'hs:ts=\E_:fs=\E\\:ds=\E_\E\\'
+
+# make the shell in every window a login shell
+#shell -$SHELL
+
+# autoaka testing
+# shellaka '> |tcsh'
+# shellaka '$ |sh'
+
+# set every new windows hardstatus line to somenthing descriptive
+# defhstatus "screen: ^En (^Et)"
+
+defscrollback 4096
+
+# don't kill window after the process died
+# zombie "^["
+
+################
+#
+# keybindings
+#
+
+#remove some stupid / dangerous key bindings
+bind k
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
+#make them better
+bind 'K' kill
+bind 'I' login on
+bind 'O' login off
+bind '}' history
+
+# Yet another hack:
+# Prepend/append register [/] to the paste if ^a^] is pressed.
+# This lets me have autoindent mode in vi.
+register [ "\033:se noai\015a"
+register ] "\033:se ai\015a"
+bind ^] paste [.]
+
+defencoding utf8
+defutf8 on
+bind b encoding big5 utf8
+bind u encoding utf8 utf8
+
+#attrcolor u "-u Y"
+#attrcolor i "-u G"
+#attrcolor b "+b"
+
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+attrcolor i "+b"
+
+# ===============================================================
+# Messages
+# %t - title
+# %n - number (a single % still works)
+# %d - day, %D - weekday name
+# %m - month, %M - month name
+# %y/Y - year (2/4 digit)
+# %w/W - hour:minutes (24/12h format)
+# %s - seconds
+# %a/AM - am/pm / AM/PM
+# "~" stands for the "bell" character
+# ===============================================================
+activity "activity in %n (%t) [%w:%s %M/%0d/%Y]"
+
+# bind windows to Fn
+#bindkey -k k1 select 1
+#bindkey -k k2 select 2
+#bindkey -k k3 select 3
+#bindkey -k k4 select 4
+#bindkey -k k5 select 5
+#bindkey -k k6 select 6
+#bindkey -k k7 select 7
+#bindkey -k k8 select 8
+#bindkey -k k9 select 9
+#bindkey -k k; select 10
+#bindkey -k F1 select 11
+#bindkey -k F2 select 12
+
+#attrcolor u "-u Y"
+#attrcolor i "-u G"
+#attrcolor b "+b"
+
+shelltitle ""
+sorendition = bc
+
+#screen 0 'ssh-agent -a $SSH_AUTH_SOCK; ssh-add; $SHELL'
+
+#screen 0
+#select 0
+#exec ssh-agent -a $SSH_AUTH_SOCK
+#exec true
+
+# 256 Color Support
+termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+#termcapinfo xterm|xterm-256color "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm:mb=\E[5m:md=\E[1m:me=\E[m:mr=\E[7m"]]]]]]
+term xterm
+
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+attrcolor i "+b"
+
+# erase background with current bg color
+defbce on
+
+# fast select window
+#bind -c fastselect q select 10
+#bind -c fastselect w select 11
+#bind -c fastselect e select 12
+#bind -c fastselect r select 13
+#bind -c fastselect t select 14
+#bind -c fastselect y select 15
+#bind -c fastselect u select 16
+#bind -c fastselect i select 17
+#bind -c fastselect o select 18
+#bind -c fastselect p select 19
+
+# 使用 Ctrl+Up & Ctrl+Down 在各 screen 之間切換
+# for putty/pietty
+bindkey \033[A prev
+bindkey \033[B next
+# for gnome-terminal
+bindkey ^[[1;5A prev
+bindkey ^[[1;5B next
+
+#end
