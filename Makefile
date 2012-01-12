@@ -1,4 +1,7 @@
-FILES=.cshrc .gitconfig .vimrc
+FILES=	.cshrc \
+	.gitconfig \
+	.screenrc \
+	.vimrc
 PWD=`pwd -L`
 
 all: install
