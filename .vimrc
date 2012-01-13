@@ -115,7 +115,7 @@ let g:tskelDir = "~/.vim/skeletons"
 let python_highlight_all = 1
 
 " for taglist.vim
-"autocmd FileType cpp,c,java,cs :TlistToggle
+autocmd FileType cpp,c,java,cs :TlistToggle
 "let Tlist_Auto_Open = 1
 let Tlist_Ctags_Cmd = '/usr/local/bin/exctags'
 let Tlist_Enable_Fold_Column = 0
