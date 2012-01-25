@@ -1,4 +1,5 @@
 [alias]
+	br = branch -v
 	ci = commit
 	co = checkout
 	di = diff
@@ -13,3 +14,5 @@
 	color = auto
 [color]
 	ui = auto
+[core]
+	safecrlf = true
