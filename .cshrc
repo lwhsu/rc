@@ -75,7 +75,7 @@ bindkey "\ew" backward-delete-word
 
 limit coredumpsize 0
 
-setenv LSCOLORS ExGxFxdxCxDxDxBxBxacad
+setenv LSCOLORS ExGxFxdxCxDxDxBxBxHCHB
 
 setenv LC_ALL en_US.UTF-8
 setenv LC_CTYPE en_US.UTF-8
