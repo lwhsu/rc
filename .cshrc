@@ -84,6 +84,8 @@ setenv LANG en_US.UTF-8
 setenv CDIFFCOLORS 1:31:32:35
 setenv DIFF_OPTIONS -ruN
 
+setenv GREP_COLOR '1;32'
+
 setenv SSH_AUTH_SOCK $HOME/.ssh/ssh-auth-sock
 
 complete gpg	c/--/"(search-keys refresh-keys)"/
