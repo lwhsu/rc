@@ -5,6 +5,7 @@
 	di = diff
 	gl = log --graph --pretty=oneline
 	glog = log --graph
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	st = status --short
 	up = pull
 [user]
