@@ -86,7 +86,7 @@ setenv CDIFFCOLORS 1:31:32:35
 
 setenv GREP_COLOR '1;32'
 
-setenv SSH_AUTH_SOCK $HOME/.ssh/ssh-auth-sock
+#setenv SSH_AUTH_SOCK $HOME/.ssh/ssh-auth-sock
 
 complete gpg	c/--/"(search-keys refresh-keys)"/
 complete sudo   'p/1/c/'
