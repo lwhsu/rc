@@ -1,4 +1,23 @@
 set nocompatible
+filetype off			"required for vundle
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'taglist.vim'
+Bundle 'msanders/snipmate.vim'
+Bundle 'AutoComplPop'
+Bundle 'gtags.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'gkz/vim-ls'
+
+iletype plugin indent on	"required for vundle
+
 set backspace=indent,eol,start
 set showcmd
 set incsearch
@@ -21,7 +40,6 @@ set cindent
 set showtabline=2
 
 syntax on
-filetype on
 filetype plugin on
 
 set encoding=utf-8
@@ -211,6 +229,9 @@ autocmd BufRead,BufNewFile *.ml map <F5> :% w !ocaml<CR>
 
 " JavaScript related
 autocmd BufRead,BufNewFile *.js map <F5> :% w !node<CR>
+
+" LiveScript related
+au BufRead,BufNewFile *.ls set ai et nu sw=4 ts=4 tw=79 expandtab
 
 " Tabs
 nmap <C-T>c :tabnew<CR>
