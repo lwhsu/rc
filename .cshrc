@@ -82,7 +82,7 @@ setenv LC_CTYPE en_US.UTF-8
 setenv LANG en_US.UTF-8
 
 setenv CDIFFCOLORS 1:31:32:35
-setenv DIFF_OPTIONS -ruN
+#setenv DIFF_OPTIONS -ruN
 
 setenv GREP_COLOR '1;32'
 
