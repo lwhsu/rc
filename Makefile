@@ -3,6 +3,7 @@ DIRS=	.vim
 FILES=	.cshrc \
 	.gitconfig \
 	.screenrc \
+	.tmux.conf \
 	.vimrc
 
 PWD=`pwd -L`
