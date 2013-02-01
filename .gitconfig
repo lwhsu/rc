@@ -17,3 +17,5 @@
 	ui = auto
 [core]
 	safecrlf = true
+[push]
+	default = simple
