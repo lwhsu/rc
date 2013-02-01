@@ -9,6 +9,10 @@ PWD=`pwd -L`
 
 all: install
 
+update:
+	git pull
+	git submodule update
+
 install:
 .for d in ${DIRS}
 	@echo -n install ${d} ...
