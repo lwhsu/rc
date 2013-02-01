@@ -16,7 +16,7 @@ Bundle 'gtags.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'gkz/vim-ls'
 
-iletype plugin indent on	"required for vundle
+filetype plugin indent on	"required for vundle
 
 set backspace=indent,eol,start
 set showcmd
