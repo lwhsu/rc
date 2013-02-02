@@ -36,6 +36,8 @@ alias t 'telnet'
 alias tin 'tin -r'
 alias x 'dig -x'
 
+alias svndiff 'svn diff \!* | cdiff'
+
 # prompt
 set prompt = "%B%m:%~ -%n- " 
 set prompt2 = "(%t %m)%~ #%% "
