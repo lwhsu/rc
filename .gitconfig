@@ -19,3 +19,5 @@
 	safecrlf = true
 [push]
 	default = simple
+[branch]
+	autosetuprebase = always
