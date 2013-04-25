@@ -18,6 +18,8 @@ Bundle 'gkz/vim-ls'
 
 filetype plugin indent on	"required for vundle
 
+set laststatus=2 " For `powerline`
+
 set backspace=indent,eol,start
 set showcmd
 set incsearch
