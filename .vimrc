@@ -82,7 +82,7 @@ augroup END
 
 " cscope
 if has("cscope")
-set csprg=/usr/bin/cscope
+set csprg=/usr/local/bin/cscope
 set csto=0
 set cst
 set nocsverb
