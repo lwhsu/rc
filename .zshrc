@@ -11,8 +11,12 @@ zstyle :compinstall filename '/home/lwhsu/.zshrc'
 autoload -Uz compinit
 compinit
 
+# my settings
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
+
 # aliases
-alias ls='ls -AGFghko'
+alias ls='ls -AGF'
 alias dir='ls -AGlFh'
 
 alias bc='bc -q'
