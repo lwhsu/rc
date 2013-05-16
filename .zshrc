@@ -15,6 +15,9 @@ compinit
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
+
 # aliases
 alias ls='ls -AGF'
 alias dir='ls -AGlFh'
