@@ -1,5 +1,5 @@
 # prompt
-PROMPT="%B%n@%m:%~ %(!.#.>)%b "
+PROMPT="%B%n@%m:%~%(!.#.>)%b "
 
 # history
 HISTFILE=~/.histfile
