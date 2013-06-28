@@ -49,3 +49,8 @@ alias s='ssh'
 alias t='telnet'
 alias tin='tin -r'
 alias x='dig -x'
+
+# aliases for svn
+svndiff () {
+    svn diff "$*" | cdiff
+}
