@@ -18,7 +18,7 @@ autoload -Uz compinit
 compinit
 
 # my settings
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 
 bindkey "^[[A" history-search-backward
