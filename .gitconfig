@@ -9,11 +9,13 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	st = status --short
 	up = pull
+	vimdiff = difftool
 [user]
 	name = Li-Wen Hsu
 	email = lwhsu@lwhsu.org
 [diff]
 	color = auto
+	tool = vimdiff
 [color]
 	ui = auto
 [core]
@@ -22,3 +24,5 @@
 	default = simple
 [branch]
 	autosetuprebase = always
+[difftool]
+	prompt = false
