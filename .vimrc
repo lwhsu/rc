@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'AutoComplPop'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'ervandew/supertab'
 Bundle 'gkz/vim-ls'
 Bundle 'gtags.vim'
 Bundle 'kien/ctrlp.vim'
@@ -135,7 +136,7 @@ let g:tskelDir = "~/.vim/skeletons"
 let python_highlight_all = 1
 
 " for SuperTab & pyCallTips
-let g:SuperTabDefaultCompletionType = "<C-N>"
+let g:SuperTabDefaultCompletionType = "context"
 
 " ins-completion options
 hi Pmenu ctermbg=DarkBlue ctermfg=Grey
