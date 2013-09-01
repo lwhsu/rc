@@ -6,15 +6,15 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'taglist.vim'
-Bundle 'msanders/snipmate.vim'
 Bundle 'AutoComplPop'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'gkz/vim-ls'
 Bundle 'gtags.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'gkz/vim-ls'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'taglist.vim'
 
 filetype plugin indent on	"required for vundle
 
