@@ -14,7 +14,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
-Bundle 'taglist.vim'
 
 filetype plugin indent on	"required for vundle
 
@@ -133,18 +132,6 @@ let g:tskelDir = "~/.vim/skeletons"
 " for python.vim
 "au FileType python source ~/.vim/plugin/python.vim
 let python_highlight_all = 1
-
-" for taglist.vim
-autocmd FileType cpp,c,java,cs :TlistToggle
-"let Tlist_Auto_Open = 1
-let Tlist_Ctags_Cmd = '/usr/local/bin/exctags'
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Process_File_Always = 1
-let Tlist_Use_Right_Window = 1
-"let Tlist_WinWidth = 24
-nnoremap <silent> <F8> :TlistToggle<CR>
 
 " for SuperTab & pyCallTips
 let g:SuperTabDefaultCompletionType = "<C-N>"
