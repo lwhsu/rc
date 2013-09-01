@@ -11,6 +11,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'gkz/vim-ls'
 Bundle 'gtags.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'majutsushi/tagbar'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -250,3 +251,9 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Magenta gui=none guifg=black
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkGrey
+
+" tagbar
+noremap <F8> :TagbarToggle<CR>
+autocmd FileType cpp,c,java,cs :TagbarOpen
+let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
+let g:tagbar_autoshowtag = 1
