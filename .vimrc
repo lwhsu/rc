@@ -255,6 +255,6 @@ highlight ColorColumn ctermbg=darkGrey
 
 " tagbar
 noremap <F8> :TagbarToggle<CR>
-autocmd FileType cpp,c,java,cs :TagbarOpen
+autocmd FileType cpp,c,java,cs,php :TagbarOpen
 let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
 let g:tagbar_autoshowtag = 1
