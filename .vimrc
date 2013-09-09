@@ -146,7 +146,7 @@ hi PmenuSel ctermbg=DarkGreen ctermfg=white
 set cursorline
 highlight CursorLine cterm=none ctermbg=blue
 "set cursorcolumn
-"highlight CursorLine cterm=none ctermbg=blue
+"highlight CursorColumn cterm=none ctermbg=blue
 map <F3> :set cursorline!<CR><Bar>:echo "Highlight active cursor line: " . strpart("OffOn", 3 * &cursorline, 3)<CR>
 
 "highlight Search term=reverse ctermbg=green ctermfg=grey
