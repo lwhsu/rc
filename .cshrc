@@ -31,7 +31,7 @@ alias psm "psu $USER"
 alias psr "psu root"
 alias psu "/bin/ps -w -U \!* | less -EmrSw"
 alias s 'ssh'
-alias ssh 'printf "\033k\!*\033\134"; /usr/bin/ssh -2A4C \!*;'
+alias ssh 'printf "\033k\!*\033\134"; /usr/bin/ssh -2AC \!*;'
 alias t 'telnet'
 alias tin 'tin -r'
 alias x 'dig -x'
