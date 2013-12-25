@@ -4,7 +4,8 @@ FILES=	.cshrc \
 	.gitconfig \
 	.screenrc \
 	.tmux.conf \
-	.vimrc
+	.vimrc \
+	.zshrc
 
 PWD=`pwd -L`
 
