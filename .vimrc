@@ -258,3 +258,5 @@ noremap <F8> :TagbarToggle<CR>
 autocmd FileType cpp,c,java,cs,php :TagbarOpen
 let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
 let g:tagbar_autoshowtag = 1
+
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
