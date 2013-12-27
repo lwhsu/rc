@@ -19,6 +19,7 @@ compinit
 
 # my settings
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 
 bindkey "^[[A" history-search-backward
