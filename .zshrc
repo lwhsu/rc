@@ -25,6 +25,8 @@ export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
+bindkey -e
+
 # aliases
 alias ls='ls -AGF'
 alias dir='ls -AGlFh'
