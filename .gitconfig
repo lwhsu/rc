@@ -26,3 +26,5 @@
 	autosetuprebase = always
 [difftool]
 	prompt = false
+[merge]
+	tool = vimdiff
