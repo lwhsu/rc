@@ -11,7 +11,6 @@ export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-
 zstyle :compinstall filename '/home/lwhsu/.zshrc'
 zstyle ':completion:*' menu select
 
@@ -24,7 +23,6 @@ export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 
 autoload -U history-search-end
-
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
