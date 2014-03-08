@@ -13,6 +13,7 @@ export LANG=en_US.UTF-8
 
 
 zstyle :compinstall filename '/home/lwhsu/.zshrc'
+zstyle ':completion:*' menu select
 
 autoload -Uz compinit
 compinit
