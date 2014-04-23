@@ -16,6 +16,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
+Bundle 'digitaltoad/vim-jade'
 
 filetype plugin indent on	"required for vundle
 
