@@ -19,6 +19,7 @@ compinit
 
 # my settings
 PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH=${PATH}:~/node_modules/.bin
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 
