@@ -23,6 +23,8 @@ PATH=${PATH}:~/node_modules/.bin
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 
+export GOPATH=~/go
+
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
