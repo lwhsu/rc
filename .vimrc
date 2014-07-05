@@ -17,6 +17,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on	"required for vundle
 
@@ -261,3 +262,5 @@ let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
 let g:tagbar_autoshowtag = 1
 
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
+
+let g:go_disable_autoinstall = 1
