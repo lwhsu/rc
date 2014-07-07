@@ -6,9 +6,11 @@ call vundle#begin()
 
 "Plugin 'gmarik/Vundle.vim'
 
-Plugin 'bling/vim-airline'
 Plugin 'AutoComplPop'
+Plugin 'bling/vim-airline'
+Plugin 'digitaltoad/vim-jade'
 Plugin 'ervandew/supertab'
+Plugin 'fatih/vim-go'
 Plugin 'gkz/vim-ls'
 Plugin 'gtags.vim'
 Plugin 'kien/ctrlp.vim'
@@ -16,8 +18,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'fatih/vim-go'
 
 call vundle#end()
 
