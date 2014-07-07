@@ -1,23 +1,25 @@
 set nocompatible
 filetype off			"required for vundle
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+"Plugin 'gmarik/Vundle.vim'
 
-Bundle 'AutoComplPop'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'ervandew/supertab'
-Bundle 'gkz/vim-ls'
-Bundle 'gtags.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'fatih/vim-go'
+Plugin 'AutoComplPop'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'ervandew/supertab'
+Plugin 'gkz/vim-ls'
+Plugin 'gtags.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'fatih/vim-go'
+
+call vundle#end()
 
 filetype plugin indent on	"required for vundle
 
