@@ -105,7 +105,7 @@ endif
 
 set nomodeline
 
-autocmd Filetype cpp,c,java,cs set omnifunc=cppcomplete#Complete 
+autocmd Filetype cpp,c,java,cs set omnifunc=cppcomplete#Complete
 
 " Tab comoplete
 "function! CleverTab()
@@ -114,7 +114,7 @@ autocmd Filetype cpp,c,java,cs set omnifunc=cppcomplete#Complete
 "else
 "return "\<C-N>"
 "endfunction
-"inoremap <Tab> <C-R>=CleverTab()<CR> 
+"inoremap <Tab> <C-R>=CleverTab()<CR>
 
 " for txl syntax highlighting
 au BufNewFile,BufRead *.Txl,*.txl,*.Grammar,*.grammar,*.Rules,*.rules,*.Module,*.module,*.Mod,*.mod,*.Grm,*.grm,*.Rul,*.rul set ft=txl
@@ -159,10 +159,10 @@ map <F3> :set cursorline!<CR><Bar>:echo "Highlight active cursor line: " . strpa
 map <F2> :set spell!<CR><Bar>:echo "Spell check: " . strpart("OffOn", 3 * &spell, 3)<CR>
 
 set nu
-highlight LineNr term=bold cterm=NONE ctermfg=darkGrey ctermbg=none gui=NONE guifg=DarkGrey guibg=NONE 
+highlight LineNr term=bold cterm=NONE ctermfg=darkGrey ctermbg=none gui=NONE guifg=DarkGrey guibg=NONE
 map <F4> :set number!<CR><Bar>:echo "Line Number: " . strpart("OffOn", 3 * &number, 3)<CR>
 
-"au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
+"au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 
 " xterm 256 colors
 set t_Co=256
