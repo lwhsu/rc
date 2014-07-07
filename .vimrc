@@ -6,8 +6,8 @@ call vundle#begin()
 
 "Plugin 'gmarik/Vundle.vim'
 
+Plugin 'bling/vim-airline'
 Plugin 'AutoComplPop'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'ervandew/supertab'
 Plugin 'gkz/vim-ls'
 Plugin 'gtags.vim'
@@ -23,7 +23,7 @@ call vundle#end()
 
 filetype plugin indent on	"required for vundle
 
-set laststatus=2 " For `powerline`
+set laststatus=2 " for vim-airline
 
 set backspace=indent,eol,start
 set showcmd
