@@ -26,6 +26,8 @@ export PAGER='/usr/bin/less -Rg'
 
 export GOPATH=~/go
 
+export SSL_CA_CERT_FILE=/usr/local/share/certs/ca-root-nss.crt
+
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
