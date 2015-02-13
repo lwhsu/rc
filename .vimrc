@@ -171,6 +171,7 @@ set t_Co=256
 set foldcolumn=5
 set foldmethod=syntax
 "set foldmethod=indent
+set foldlevelstart=999
 highlight Folded ctermbg=none ctermfg=grey
 highlight FoldColumn ctermbg=none ctermfg=white
 
