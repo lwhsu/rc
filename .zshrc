@@ -62,6 +62,7 @@ alias df='df -h'
 alias du='du -h'
 alias grep='grep --color'
 alias g='grep'
+alias gve="grep -ve '^$' | grep -ve '^#'"
 alias gdb='gdb -q'
 alias mv='mv -i'
 alias p='ping'
