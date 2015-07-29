@@ -18,13 +18,15 @@ autoload -Uz compinit
 compinit
 
 # my settings
-PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH=~/bin:~/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 PATH=${PATH}:~/node_modules/.bin
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 export PAGER='/usr/bin/less -Rg'
 
 export GOPATH=~/go
+
+export PYTHONPATH=~/local/lib/python2.7/site-packages
 
 export SSL_CA_CERT_FILE=/usr/local/share/certs/ca-root-nss.crt
 
