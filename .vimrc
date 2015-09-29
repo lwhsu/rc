@@ -7,6 +7,7 @@ call vundle#begin()
 "Plugin 'gmarik/Vundle.vim'
 
 Plugin 'AutoComplPop'
+Plugin 'Townk/vim-autoclose'
 Plugin 'bling/vim-airline'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ervandew/supertab'
