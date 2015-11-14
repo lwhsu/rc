@@ -24,6 +24,8 @@ call vundle#end()
 
 filetype plugin indent on	"required for vundle
 
+let g:osname = system('uname -s')
+
 set laststatus=2 " for vim-airline
 
 set backspace=indent,eol,start
@@ -262,7 +264,11 @@ highlight ColorColumn ctermbg=darkGrey
 " tagbar
 noremap <F8> :TagbarToggle<CR>
 "autocmd FileType cpp,c,java,cs,php :TagbarOpen
-let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
+if g:osname == "FreeBSD" " pkg install ctags
+	let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
+elseif g:osname == "Darwin" " brew install ctags
+	let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+endif
 let g:tagbar_autoshowtag = 1
 
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
