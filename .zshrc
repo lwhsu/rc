@@ -20,6 +20,7 @@ compinit
 # my settings
 PATH=~/bin:~/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 PATH=${PATH}:~/node_modules/.bin
+export TERM=xterm-256color
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 export PAGER='/usr/bin/less -Rg'
