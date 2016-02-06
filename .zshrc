@@ -14,6 +14,7 @@ export LANG=en_US.UTF-8
 zstyle :compinstall filename '/home/lwhsu/.zshrc'
 zstyle ':completion:*' menu select
 
+fpath=(~/.zsh/completion /usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 compinit
 
