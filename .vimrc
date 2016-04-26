@@ -19,6 +19,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ghewgill/vim-scmdiff'
 
 call vundle#end()
 
