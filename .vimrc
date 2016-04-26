@@ -153,9 +153,27 @@ hi PmenuSel ctermbg=DarkGreen ctermfg=white
 
 set cursorline
 highlight CursorLine cterm=none ctermbg=darkblue
-"set cursorcolumn
-"highlight CursorColumn cterm=none ctermbg=blue
-map <F3> :set cursorline!<CR><Bar>:echo "Highlight active cursor line: " . strpart("OffOn", 3 * &cursorline, 3)<CR>
+highlight CursorColumn cterm=none ctermbg=darkblue
+
+let g:cursorLineAndColumnState = 1
+:function ChangeCursorLineAndColumn()
+:    let g:cursorLineAndColumnState = (g:cursorLineAndColumnState + 1) % 4
+:    if g:cursorLineAndColumnState == 0
+:        set nocursorline
+:        set nocursorcolumn
+:    elseif g:cursorLineAndColumnState == 1
+:        set cursorline
+:        set nocursorcolumn
+:    elseif g:cursorLineAndColumnState == 2
+:        set nocursorline
+:        set cursorcolumn
+:    elseif g:cursorLineAndColumnState == 3
+:        set cursorline
+:        set cursorcolumn
+:    endif
+:endfunction
+
+map <F3> :call ChangeCursorLineAndColumn()<CR>
 
 "highlight Search term=reverse ctermbg=green ctermfg=grey
 
