@@ -70,6 +70,7 @@ alias gve="grep -ve '^$' | grep -ve '^#'"
 alias gdb='gdb -q'
 alias mv='mv -i'
 alias p='ping'
+alias p6='ping6'
 #ssh () {
 #	printf '\033k'$*'\033\\'
 #	/usr/bin/ssh -2A4C $*
