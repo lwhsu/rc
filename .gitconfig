@@ -28,3 +28,5 @@
 [merge]
 	tool = vimdiff
 	prompt = false
+[commit]
+	gpgsign = true
