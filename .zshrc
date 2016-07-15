@@ -75,8 +75,9 @@ alias p6='ping6'
 #	printf '\033k'$*'\033\\'
 #	/usr/bin/ssh -2A4C $*
 #}
-alias ssh='ssh -2A4C'
-alias s='ssh'
+alias ssh='ssh -2AC'
+alias s='ssh -4'
+alias s6='ssh -6'
 alias t='telnet'
 alias tin='tin -r'
 alias x='dig -x'
