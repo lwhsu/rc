@@ -61,7 +61,7 @@ alias bc='bc -q'
 alias cd..='cd ..'
 alias cls='clear'
 alias cp='cp -i'
-alias d='dig'
+alias d='drill'
 alias df='df -h'
 alias du='du -h'
 alias grep='grep --color'
@@ -80,7 +80,7 @@ alias s='ssh -4'
 alias s6='ssh -6'
 alias t='telnet'
 alias tin='tin -r'
-alias x='dig -x'
+alias x='drill -x'
 
 # aliases for svn
 svndiff () {
