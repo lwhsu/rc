@@ -294,3 +294,6 @@ let g:tagbar_width = 72
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 let g:go_disable_autoinstall = 1
+
+set wildmenu
+set lazyredraw
