@@ -65,6 +65,7 @@ alias cp='cp -i'
 alias d='drill'
 alias df='df -h'
 alias du='du -h'
+alias f='find ./ -name'
 alias grep='grep --color'
 alias g='grep'
 alias gve="grep -ve '^$' | grep -ve '^#'"
