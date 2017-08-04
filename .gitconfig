@@ -1,5 +1,6 @@
 [alias]
-	br = branch -vv -a
+	br = branch -vv
+	bra = branch -vv -a
 	ci = commit
 	co = checkout
 	di = diff
