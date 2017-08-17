@@ -39,6 +39,8 @@ else
     /bin/ln -sf $SSH_AUTH_SOCK $HOME/.ssh/ssh-auth-sock
 fi
 
+bindkey -e
+
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
@@ -51,8 +53,6 @@ backward-delete-to-slash () {
 }
 zle -N backward-delete-to-slash
 bindkey "\e\b" backward-delete-to-slash
-
-bindkey -e
 
 # aliases
 alias ls='ls -AGF'
