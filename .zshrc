@@ -39,6 +39,8 @@ else
     /bin/ln -sf $SSH_AUTH_SOCK $HOME/.ssh/ssh-auth-sock
 fi
 
+export GPG_TTY=${TTY}
+
 bindkey -e
 
 autoload -U history-search-end
