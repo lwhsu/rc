@@ -90,3 +90,6 @@ alias x='drill -x'
 svndiff () {
     svn diff "$*" | cdiff
 }
+svnshow () {
+    { svn log -c $1 && svn diff -c $1 } | cdiff
+}
