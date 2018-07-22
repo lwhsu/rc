@@ -266,10 +266,8 @@ nmap [C :tabnext<CR>
 imap [D <ESC>:tabprev<CR>
 imap [C <ESC>:tabnext<CR>
 
-" Tab
-set listchars=tab:>-
-"noremap ,st :list listchars=tab:>-<CR>
-"noremap ,ct :set nolist<CR>
+" list mode
+set listchars=eol:$,tab:>-,space:.,trail:~,extends:>,precedes:<
 map <F7> :set list!<CR><Bar>:echo "Unprintable characters display: " . strpart("OffOn", 3 * &list, 3)<CR>
 
 highlight DiffAdd cterm=none ctermfg=black ctermbg=Green gui=none guifg=black guibg=Green
