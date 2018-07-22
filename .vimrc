@@ -280,7 +280,7 @@ highlight ColorColumn ctermbg=darkGrey
 
 " tagbar
 noremap <F8> :TagbarToggle<CR>
-autocmd FileType cpp,c,java,cs,php :TagbarOpen
+"autocmd FileType cpp,c,java,cs,php :TagbarOpen
 if g:osname == "FreeBSD" " pkg install ctags
 	let g:tagbar_ctags_bin = '/usr/local/bin/exctags'
 elseif g:osname == "Darwin" " brew install ctags
