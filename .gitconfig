@@ -1,4 +1,5 @@
 [alias]
+	ann = blame
 	br = branch -vv
 	bra = branch -vv -a
 	ci = commit
