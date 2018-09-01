@@ -152,8 +152,8 @@ hi PmenuSel ctermbg=DarkGreen ctermfg=white
 "set pumheight=16
 
 set cursorline
-highlight CursorLine cterm=none ctermbg=darkblue
-highlight CursorColumn cterm=none ctermbg=darkblue
+highlight CursorLine cterm=none ctermbg=17
+highlight CursorColumn cterm=none ctermbg=17
 
 let g:cursorLineAndColumnState = 1
 :function ChangeCursorLineAndColumn()
