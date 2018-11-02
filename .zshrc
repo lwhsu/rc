@@ -69,6 +69,7 @@ alias g='grep'
 alias gve="grep -ve '^$' | grep -ve '^#'"
 alias gdb='gdb -q'
 alias mv='mv -i'
+alias open='xdg-open'
 alias p='ping'
 alias p6='ping6'
 #ssh () {
