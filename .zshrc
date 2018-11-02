@@ -49,12 +49,8 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
-backward-delete-to-slash () {
-    local WORDCHARS=${WORDCHARS//\//}
-    zle .backward-delete-word
-}
-zle -N backward-delete-to-slash
-bindkey "\e\b" backward-delete-to-slash
+autoload -U select-word-style
+select-word-style bash
 
 # aliases
 alias ls='ls -AGF'
