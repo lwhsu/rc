@@ -57,6 +57,7 @@ alias ls='ls -AGF'
 alias dir='ls -AGlFh'
 
 alias bc='bc -q'
+alias cal3='cal -3'
 alias cd..='cd ..'
 alias cls='clear'
 alias cp='cp -i'
