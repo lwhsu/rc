@@ -85,6 +85,9 @@ alias tin='tin -r'
 alias x='drill -x'
 
 # aliases for svn
+svnann () {
+    svn ann "$*" | less
+}
 svndiff () {
     svn diff "$*" | cdiff
 }
