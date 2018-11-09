@@ -26,6 +26,7 @@ export TERM=xterm-256color
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 export PAGER='/usr/bin/less -Rg'
+export IFCONFIG_FORMAT=inet:cidr,inet6:cidr
 
 export GOPATH=~/go
 
