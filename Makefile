@@ -1,4 +1,5 @@
-DIRS=	.vim
+DIRS=	.gnupg \
+	.vim
 
 FILES=	.cshrc \
 	.gitconfig \
