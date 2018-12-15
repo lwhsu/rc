@@ -29,6 +29,7 @@ export PAGER='/usr/bin/less -Rg'
 export IFCONFIG_FORMAT=inet:cidr,inet6:cidr
 
 export GOPATH=~/go
+PATH=${PATH}:${GOPATH}/bin
 
 export PYTHONPATH=~/local/lib/python2.7/site-packages
 
