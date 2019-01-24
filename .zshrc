@@ -29,6 +29,8 @@ export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 export PAGER='/usr/bin/less -Rg'
 export IFCONFIG_FORMAT=inet:cidr,inet6:cidr
 
+export ACK_PAGER='less -r'
+
 export GOPATH=~/go
 PATH=${PATH}:${GOPATH}/bin
 
