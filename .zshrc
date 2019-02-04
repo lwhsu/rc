@@ -74,6 +74,7 @@ alias grep='grep --color'
 alias g='grep'
 alias gve="grep -ve '^$' | grep -ve '^#'"
 alias gdb='gdb -q'
+mkcd () { mkdir -p $1; cd $1 }
 alias mv='mv -i'
 alias open='xdg-open'
 alias p='ping'
