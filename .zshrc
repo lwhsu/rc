@@ -91,15 +91,7 @@ alias tin='tin -r'
 alias x='drill -x'
 
 # aliases for svn
-svnann () {
-    svn ann $* | less
-}
-svndiff () {
-    svn diff $* | cdiff
-}
-svnlog () {
-    svn log $* | less
-}
-svnshow () {
-    { svn log -c $1 && svn diff -c $1 } | cdiff
-}
+svnann () { svn ann $* | less }
+svndiff () { svn diff $* | cdiff }
+svnlog () { svn log $* | less }
+svnshow () { { svn log -c $1 && svn diff -c $1 } | cdiff }
