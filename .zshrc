@@ -26,10 +26,18 @@ PATH=${PATH}:~/go/bin
 export TERM=xterm-256color
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
-export PAGER='/usr/bin/less -Rg'
 export IFCONFIG_FORMAT=inet:cidr,inet6:cidr
 
+export PAGER='/usr/bin/less -Rg'
 export ACK_PAGER='less -r'
+export LESS_TERMCAP_mb='[1;31m'
+export LESS_TERMCAP_md='[1;33m'
+export LESS_TERMCAP_me='[0m'
+export LESS_TERMCAP_so='[1;44;33m'
+export LESS_TERMCAP_se='[0m'
+export LESS_TERMCAP_us='[1;32m'
+export LESS_TERMCAP_ue='[0m'
+#export LESSCHARDEF="8bcccbcc18b95.."
 
 export GOPATH=~/go
 PATH=${PATH}:${GOPATH}/bin
