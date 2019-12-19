@@ -100,6 +100,6 @@ alias x='drill -x'
 
 # aliases for svn
 svnann () { svn ann $* | less }
-svndiff () { svn diff $* | cdiff }
+svndiff () { svn diff $* | diff-so-fancy }
 svnlog () { svn log $* | less }
-svnshow () { { svn log -c $1 && svn diff -c $1 } | cdiff }
+svnshow () { { svn log -c $1 && svn diff -c $1 } | diff-so-fancy }
