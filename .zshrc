@@ -28,7 +28,7 @@ export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
 export IFCONFIG_FORMAT=inet:cidr,inet6:cidr
 
-export PAGER='/usr/bin/less -Rg'
+export PAGER='/usr/bin/less -Rw'
 export ACK_PAGER='less -r'
 export LESS_TERMCAP_mb='[1;31m'
 export LESS_TERMCAP_md='[1;33m'
