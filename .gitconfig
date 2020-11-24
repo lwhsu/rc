@@ -1,7 +1,7 @@
 [alias]
 	ann = blame
 	br = branch -vv
-	bra = branch -vv -a
+	ba = branch -vv -a
 	ci = commit
 	co = checkout
 	di = diff
