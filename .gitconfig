@@ -33,3 +33,5 @@
 	prompt = false
 [commit]
 	#gpgsign = true
+[format]
+	pretty = fuller
