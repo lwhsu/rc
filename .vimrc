@@ -248,6 +248,9 @@ autocmd BufRead,BufNewFile *.ml map <F5> :% w !ocaml<CR>
 " JavaScript related
 autocmd BufRead,BufNewFile *.js map <F5> :% w !node<CR>
 
+" Perl related
+autocmd BufRead,BufNewFile *.pl map <F5> :% w !perl<CR>
+
 " LiveScript related
 au BufRead,BufNewFile *.ls set ai et nu sw=4 ts=4 tw=79 expandtab
 
