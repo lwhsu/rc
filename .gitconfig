@@ -35,3 +35,5 @@
 	#gpgsign = true
 [format]
 	pretty = fuller
+[push]
+	default = upstream
