@@ -65,6 +65,19 @@ bindkey "^[[B" history-beginning-search-forward-end
 autoload -U select-word-style
 select-word-style bash
 
+autoload -Uz vcs_info
+precmd_vcs_info() {
+    vcs_info
+    if [[ -n ${vcs_info_msg_0_} ]]; then
+        PROMPT="%B%n@%m:%~ {\${vcs_info_msg_0_}} %(!.#.>)%b "
+    else
+        PROMPT="%B%n@%m:%~ %(!.#.>)%b "
+    fi
+}
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+zstyle ':vcs_info:git:*' formats '%b'
+
 # aliases
 alias ls='ls -AGF'
 alias dir='ls -AGlFh'
