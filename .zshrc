@@ -49,7 +49,7 @@ export SSL_CA_CERT_FILE=/usr/local/share/certs/ca-root-nss.crt
 if [[ -n ${TMUX} ]]; then
     export SSH_AUTH_SOCK=${HOME}/.ssh/ssh-auth-sock
 else
-    if [ -S ${SSH_AUTH_SOCK} ]; then
+    if [ -S "${SSH_AUTH_SOCK}" ]; then
         /bin/ln -sf ${SSH_AUTH_SOCK} ${HOME}/.ssh/ssh-auth-sock
     fi
 fi
