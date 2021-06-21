@@ -47,9 +47,11 @@ export PYTHONPATH=~/local/lib/python2.7/site-packages
 export SSL_CA_CERT_FILE=/usr/local/share/certs/ca-root-nss.crt
 
 if [[ -n ${TMUX} ]]; then
-    export SSH_AUTH_SOCK=$HOME/.ssh/ssh-auth-sock
+    export SSH_AUTH_SOCK=${HOME}/.ssh/ssh-auth-sock
 else
-    /bin/ln -sf $SSH_AUTH_SOCK $HOME/.ssh/ssh-auth-sock
+    if [ -S ${SSH_AUTH_SOCK} ]; then
+        /bin/ln -sf ${SSH_AUTH_SOCK} ${HOME}/.ssh/ssh-auth-sock
+    fi
 fi
 
 export GPG_TTY=${TTY}
