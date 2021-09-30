@@ -20,12 +20,14 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ghewgill/vim-scmdiff'
+Plugin 'luochen1990/rainbow'
 
 call vundle#end()
 
 filetype plugin indent on	"required for vundle
 
 let g:osname = system('uname -s')
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 set laststatus=2 " for vim-airline
 
