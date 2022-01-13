@@ -110,6 +110,7 @@ alias ssh='ssh -2AC'
 alias s='ssh -4'
 alias s6='ssh -6'
 alias t='telnet'
+alias t6='telnet -6'
 alias tin='tin -r'
 alias x='drill -x'
 
