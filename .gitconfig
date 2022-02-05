@@ -32,7 +32,7 @@
 	tool = vimdiff
 	prompt = false
 [commit]
-	#gpgsign = true
+	gpgsign = true
 [format]
 	pretty = fuller
 [push]
