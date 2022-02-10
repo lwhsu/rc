@@ -42,8 +42,6 @@ export LESS_TERMCAP_ue='[0m'
 export GOPATH=~/go
 PATH=${PATH}:${GOPATH}/bin
 
-export PYTHONPATH=~/local/lib/python2.7/site-packages
-
 export SSL_CA_CERT_FILE=/usr/local/share/certs/ca-root-nss.crt
 
 if [[ -n ${TMUX} ]]; then
