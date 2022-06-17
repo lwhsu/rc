@@ -35,5 +35,7 @@
 	gpgsign = true
 [format]
 	pretty = fuller
+[log]
+	date = iso
 [push]
 	default = upstream
