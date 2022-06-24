@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ghewgill/vim-scmdiff'
 Plugin 'luochen1990/rainbow'
+Plugin 'prabirshrestha/vim-lsp'
 
 call vundle#end()
 
@@ -309,3 +310,34 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 set mouse-=a
+
+au User lsp_setup call lsp#register_server({
+    \ 'name': 'clangd',
+    \ 'cmd': {server_info->['clangd14', '--background-index', '--header-insertion=never']},
+    \ 'allowlist': ['c', 'cpp', 'objc'],
+    \ 'initialization_options': {},
+    \ })
+
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    setlocal completeopt-=preview
+    setlocal keywordprg=:LspHover
+
+    nmap <buffer> <C-]> <plug>(lsp-definition)
+    nmap <buffer> <C-W>] <plug>(lsp-peek-definition)
+    nmap <buffer> <C-W><C-]> <plug>(lsp-peek-definition)
+    nmap <buffer> gr <plug>(lsp-references)
+    nmap <buffer> <C-n> <plug>(lsp-next-reference)
+    nmap <buffer> <C-p> <plug>(lsp-previous-reference)
+    nmap <buffer> gI <plug>(lsp-implementation)
+    nmap <buffer> go <plug>(lsp-document-symbol)
+    nmap <buffer> gS <plug>(lsp-workspace-symbol)
+    nmap <buffer> ga <plug>(lsp-code-action)
+    nmap <buffer> gR <plug>(lsp-rename)
+    nmap <buffer> gm <plug>(lsp-signature-help)
+endfunction
+
+augroup lsp_install
+    au!
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
