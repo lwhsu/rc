@@ -27,7 +27,7 @@ call vundle#end()
 filetype plugin indent on	"required for vundle
 
 let g:osname = system('uname -s')
-let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+let g:rainbow_active = 0 "set to 0 if you want to enable it later via :RainbowToggle
 
 set laststatus=2 " for vim-airline
 
