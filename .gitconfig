@@ -39,3 +39,4 @@
 	date = iso
 [push]
 	default = upstream
+	autoSetupRemote = yes
