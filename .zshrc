@@ -22,7 +22,6 @@ compinit
 PATH=~/bin:~/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 PATH=${PATH}:/usr/local/texlive/2016/bin/x86_64-darwin
 PATH=${PATH}:~/node_modules/.bin
-PATH=${PATH}:~/go/bin
 export TERM=xterm-256color
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
