@@ -15,7 +15,7 @@
 [user]
 	name = Li-Wen Hsu
 	email = lwhsu@lwhsu.org
-	signingkey = 0x82B261B14D3BC7AF
+	signingkey = 0x7377A4A02A2954DD
 [diff]
 	color = auto
 	tool = vimdiff
