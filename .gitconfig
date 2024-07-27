@@ -23,7 +23,7 @@
 	ui = auto
 [core]
 	safecrlf = true
-	pager = diff-so-fancy | less -R
+	pager = delta
 [branch]
 	autoSetupRebase = always
 [difftool]
