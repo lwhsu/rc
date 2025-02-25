@@ -19,11 +19,13 @@
 [diff]
 	color = auto
 	tool = vimdiff
+	algorithm = histogram
+	colorMoved = plain
 [color]
 	ui = auto
 [core]
 	safecrlf = true
-	pager = delta
+#	pager = delta
 [branch]
 	autoSetupRebase = always
 [difftool]
@@ -31,8 +33,10 @@
 [merge]
 	tool = vimdiff
 	prompt = false
+	conflictStyle = zdiff3
 [commit]
 	gpgsign = true
+#	verbose = true
 [format]
 	pretty = fuller
 [log]
@@ -46,3 +50,5 @@
 	autoStash = true
 [blame]
 	coloring = repeatedLines
+[help]
+	autoCorrect = prompt
