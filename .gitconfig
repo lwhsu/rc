@@ -42,6 +42,7 @@
 	pretty = fuller
 [log]
 	date = iso
+	showSignature = true
 [push]
 	default = upstream
 	autoSetupRemote = yes
