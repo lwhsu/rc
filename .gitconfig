@@ -15,7 +15,7 @@
 [user]
 	name = Li-Wen Hsu
 	email = lwhsu@lwhsu.org
-	signingkey = 0x7377A4A02A2954DD
+	signingKey = 0x7377A4A02A2954DD
 [diff]
 	color = auto
 	tool = vimdiff
@@ -36,7 +36,7 @@
 	prompt = false
 	conflictStyle = zdiff3
 [commit]
-	gpgsign = true
+	gpgSign = true
 #	verbose = true
 [format]
 	pretty = fuller
@@ -46,6 +46,7 @@
 [push]
 	default = upstream
 	autoSetupRemote = yes
+	gpgSign = if-asked
 [pull]
 	rebase = true
 [rebase]
@@ -54,3 +55,5 @@
 	coloring = repeatedLines
 [help]
 	autoCorrect = prompt
+[tag]
+	gpgSign = true
