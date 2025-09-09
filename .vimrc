@@ -8,6 +8,7 @@ call vundle#begin()
 
 Plugin 'AutoComplPop'
 Plugin 'Townk/vim-autoclose'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ervandew/supertab'
@@ -345,3 +346,7 @@ augroup lsp_install
 augroup END
 
 nnoremap gp `[v`]
+
+" For Plugin 'airblade/vim-gitgutter'
+highlight SignColumn ctermbg=black
+highlight GitGutterChange ctermfg=yellow
