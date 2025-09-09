@@ -193,7 +193,7 @@ map <F4> :set number!<CR><Bar>:echo "Line Number: " . strpart("OffOn", 3 * &numb
 set t_Co=256
 
 " Folding
-set foldcolumn=5
+"set foldcolumn=5
 set foldmethod=syntax
 "set foldmethod=indent
 set foldlevelstart=999
