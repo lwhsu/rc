@@ -3,6 +3,7 @@ DIRS=	.gnupg \
 
 FILES=	.cshrc \
 	.gitconfig \
+	.npmrc \
 	.screenrc \
 	.tmux.conf \
 	.vimrc \
