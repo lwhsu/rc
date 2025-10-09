@@ -22,8 +22,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'ghewgill/vim-scmdiff'
-Plugin 'luochen1990/rainbow'
 Plugin 'prabirshrestha/vim-lsp'
 
 call vundle#end()
