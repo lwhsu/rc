@@ -19,8 +19,9 @@ autoload -Uz compinit
 compinit
 
 # my settings
-PATH=~/bin:~/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
-PATH=${PATH}:~/.local/bin
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+PATH=~/.local/bin:${PATH}
+PATH=~/bin:${PATH}
 export TERM=xterm-256color
 export EDITOR=vim
 export LSCOLORS=ExGxFxdxCxDxDxBxBxHCHB
