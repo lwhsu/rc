@@ -77,6 +77,8 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 zstyle ':vcs_info:git:*' formats '%b'
 
+setopt HIST_VERIFY
+
 # aliases
 alias ls='ls -AGF'
 alias dir='ls -AGlFh'
