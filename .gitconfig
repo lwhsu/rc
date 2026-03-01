@@ -57,3 +57,5 @@
 	autoCorrect = prompt
 [tag]
 	gpgSign = true
+[init]
+	defaultBranch = main
