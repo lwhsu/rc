@@ -1,4 +1,5 @@
-DIRS=	.gnupg \
+DIRS=	.config \
+	.gnupg \
 	.vim
 
 FILES=	.cshrc \
