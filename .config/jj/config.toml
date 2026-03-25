@@ -3,3 +3,6 @@
 [user]
 name = "Li-Wen Hsu"
 email = "lwhsu@lwhsu.org"
+
+[ui]
+default-command = "log"
